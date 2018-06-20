@@ -66,6 +66,8 @@
         var letterBtn = $("<button>");
         letterBtn.addClass("letter-button letter letter-button-color");
         letterBtn.attr("data-letter", letters[i]);
+        letterBtn.text(letters[i]);
+        $("#buttons").append(letterBtn);
         
       }
 
