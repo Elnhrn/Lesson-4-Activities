@@ -99,12 +99,24 @@ $(".number").on("click", function(){
     return false;
   }
   if (isOperatorChosen) {
-    num2 += 
+    num2 += $(this).val();
+    $("#second-number").text(num2);
+
   }
+
+  else {
+    num1 += $(this).val();
+    $("#first-number").text(num1);
+  }
+
 });
 
 $(".operator").on("click", function(){
-  
+  if (isCalculated) {
+    return false; 
+  }
+  if ()
+
 });
 
 $(".equal").on("click", function(){
