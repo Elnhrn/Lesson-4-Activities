@@ -74,25 +74,51 @@
 
 $(document).ready(function() {
 // vars
-var numberArr = [];
-var operator;
+var num1 = 0;
+var num2 = 0;
+var operator = "";
+var result = 0;
+var isOperatorChosen = false;
+var isCalculated = false;
 
 // functions
-// add
+function initializeCalculator() {
+  isOperatorChosen = false;
+  isCalculated = false;
+  num1 = "";
+  num2 = "";
+  result = "";
+  operator = "";
 
-// subtract
-
-// multiply
-
-// divide
-
-// exponent
-
-// clear
+  $("#first-number, #second-number, #operator, #result").empty();
+}
 
 // onclicks
-// on button click, capture the text of that button
+$(".number").on("click", function(){
+  if (isCalculated) {
+    return false;
+  }
+  if (isOperatorChosen) {
+    num2 += 
+  }
+});
 
+$(".operator").on("click", function(){
+  
+});
+
+$(".equal").on("click", function(){
+
+});
+
+$(".clear").on("click", function(){
+  $("#first-number").empty();
+  $("#operator").empty();
+  $("#second-number").empty();
+  $("#result").empty();
+});
+
+initializeCalculator();
 
 });
 
